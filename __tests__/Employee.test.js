@@ -20,3 +20,9 @@ test('retrieve employee Id', () => {
     expect(employee.getId()).toBeGreaterThanOrEqual(0);
     expect(employee.getId()).toBeLessThanOrEqual(1000);
 });
+
+test('retrieve employee email', () => {
+    const employee = new Employee('Robert Duong', 'robpduo@gmail.com');
+
+    expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email));
+});
