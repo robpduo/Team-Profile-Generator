@@ -1,7 +1,7 @@
 const Engineer = require('../lib/Engineer');
 
 test('create engineer object', () => {
-    const engineer = new Engineer('Robert Engineer', 'robpduo@gmail.com', 'University of Toronto');
+    const engineer = new Engineer('Robert Engineer', 'robpduo@gmail.com', 'robpduo');
 
     expect(engineer.name).toBe('Robert Engineer');
     expect(engineer.id).toBeLessThanOrEqual(1000);
@@ -9,13 +9,13 @@ test('create engineer object', () => {
 });
 
 test('retrieve engineers school name', () => {
-    const engineer = new Engineer('Robert Engineer', 'robpduo@gmail.com', 'University of Toronto');
+    const engineer = new Engineer('Robert Engineer', 'robpduo@gmail.com', 'robpduo');
 
-    expect(engineer.getSchool()).toBe('University of Toronto');
+    expect(engineer.getGithub()).toBe('robpduo');
 });
 
 test('retrieve engineer role', () => {
-    const engineer = new Engineer('Robert Engineer', 'robpduo@gmail.com', 'University of Toronto');
+    const engineer = new Engineer('Robert Engineer', 'robpduo@gmail.com', 'robpduo');
 
     expect(engineer.getRole()).toBe('Engineer');
 });
