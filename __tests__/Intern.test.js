@@ -14,3 +14,9 @@ test('retrieve interns school name', () =>{
 
     expect(intern.getSchool()).toBe('University of Toronto');
 });
+
+test('retrive interns role', () => {
+    const intern = new Intern('Robert Intern', 'robpduo@gmail.com', 'University of Toronto');
+    
+    expect(intern.getRole()).toBe('Intern');
+});
