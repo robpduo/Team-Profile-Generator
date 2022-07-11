@@ -13,3 +13,9 @@ test('retrieve engineers school name', () => {
 
     expect(engineer.getSchool()).toBe('University of Toronto');
 });
+
+test('retrieve engineer role', () => {
+    const engineer = new Engineer('Robert Engineer', 'robpduo@gmail.com', 'University of Toronto');
+
+    expect(engineer.getRole()).toBe('Engineer');
+});
