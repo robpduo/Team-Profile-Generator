@@ -6,11 +6,11 @@ Link to Video Demonstration: https://drive.google.com/file/d/1MriU05GguMOTFiTt8S
 This application generates a team profile page based on user input on the command line
 
 # Technologies Used
-Javascript
-Node.js
-  Jest
-  Inquirer
-  File System
+Javascript<br/>
+Node.js</br>
+  Jest</br>
+  Inquirer</br>
+  File System</br>
 
 # Features
 Users are able to select whether to add an Intern, Manager, or Engineer to their team profile
