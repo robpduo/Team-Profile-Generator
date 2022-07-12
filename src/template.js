@@ -1,5 +1,7 @@
 const renderManagerInfo = data => {
-
+    return `<li class="list-item id">ID: ${data.id}</li>
+                                <li class="list-item email">Email: ${data.email}</li>
+                                <li class=list-item office-number">Office Number: ${data.officeNumber}</li>`
 }
 
 const renderInternInfo = data => {
@@ -12,12 +14,18 @@ const renderEngineerInfo = data => {
 
 const generateCards = data => {
     return `
-                <div class="container-card">
+                <div class="container-cards">
                 ${data.map(profile => {
                     return `
                     <div class="card">
                         <div class="card-title">
-                            <h3>${profile.name}</h3>
+                            <h3 class="name">${profile.name}</h3>
+                        </div>
+
+                        <div class="card-body">
+                            <ul class="info">
+                                ${(profile.role == 'Manager') ? renderManagerInfo(profile) : ' '}
+                            </ul>
                         </div>
                     </div>
                     `
