@@ -34,9 +34,9 @@ Unit tests were conducted for the following service layers: Intern.js, Employee.
 Unit tests were done with Jest
 
 # To Run (from the root directory)
-Install dependencies: npm install
-Run tests: npm run test
-Run application: node index.js 
+Install dependencies: npm install</br>
+Run tests: npm run test</br>
+Run application: node index.js</br>
 
 ## Future Imporvements
 Validation check to determine if the randomly generated ID is unique
