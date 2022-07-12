@@ -1,16 +1,4 @@
-const generateCards = data => {
-console.log('data :', data.name);
-    return `
-                <div class="card">
-                    <div class="card-title">
-                        <h3>${data.name}</h3>
-                    </div>
-                </div>
-            `
-}
-
-module.exports = templateData => {
-    return `<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -29,14 +17,10 @@ module.exports = templateData => {
         </header>
 
         <main class="container main">
-            ${templateData.map(profile => {
-            console.log('profile :', profile);
-                generateCards(profile);
-            })}
+            
         </main>
 
         <footer>
         </footer>
     </body>
-    `
-}
+    
