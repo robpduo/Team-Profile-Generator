@@ -5,11 +5,15 @@ const renderManagerInfo = data => {
 }
 
 const renderInternInfo = data => {
-
+    return `<li class="list-item id">ID: ${data.id}</li>
+                                <li class="list-item email">Email: ${data.email}</li>
+                                <li class=list-item school">School Name: ${data.school}</li>`
 }
 
 const renderEngineerInfo = data => {
-    
+    return `<li class="list-item id">ID: ${data.id}</li>
+                                <li class="list-item email">Email: ${data.email}</li>
+                                <li class=list-item github">Github: <span><a href="https://www.github.com/${data.github}">${data.github}</a></span></li>`
 }
 
 const generateCards = data => {
@@ -20,11 +24,16 @@ const generateCards = data => {
                     <div class="card">
                         <div class="card-title">
                             <h3 class="name">${profile.name}</h3>
+                            ${profile.role == 'Intern' ? `<img class="image" src="intern.png"><span class="role">${profile.role}</span></img>` : ' '}
+                            ${profile.role == 'Manager' ? `<img class="image" src="manager.png"><span class="role">${profile.role}</span></img>` : ' '}
+                            ${profile.role == 'Engineer' ? `<img class="image" src="engineer.png"><span class="role">${profile.role}</span></img>` : ' '}
                         </div>
 
                         <div class="card-body">
                             <ul class="info">
                                 ${(profile.role == 'Manager') ? renderManagerInfo(profile) : ' '}
+                                ${(profile.role == 'Engineer') ? renderEngineerInfo(profile) : ' '}
+                                ${(profile.role == 'Intern') ? renderInternInfo(profile) : ' '}
                             </ul>
                         </div>
                     </div>

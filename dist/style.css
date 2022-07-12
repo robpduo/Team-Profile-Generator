@@ -25,9 +25,22 @@
 .name {
     color: aliceblue;
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+.role {
+    margin-top: 0;
+    margin-bottom: 00px;
+    color: aliceblue;
+    font-size: 25px;
 }
 
 .info {
     padding: 15px;
     list-style-type: none;
+}
+
+.image {
+    height: 30px;
+    width: 30px;
 }
