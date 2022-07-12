@@ -1,3 +1,15 @@
+const renderManagerInfo = data => {
+
+}
+
+const renderInternInfo = data => {
+
+}
+
+const renderEngineerInfo = data => {
+    
+}
+
 const generateCards = data => {
     return `
                 <div class="container-card">
