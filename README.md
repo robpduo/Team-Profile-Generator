@@ -26,8 +26,8 @@ Input validation was implemented for the following prompts:
     School Name: required field, cannot be left blank
 
 # Usage
-![image](https://user-images.githubusercontent.com/101683611/178546278-31bf9c1a-a550-40d4-8fb3-349a45fe88ec.png)
+![image](https://user-images.githubusercontent.com/101683611/178546278-31bf9c1a-a550-40d4-8fb3-349a45fe88ec.png)</br>
 Users are prompted with a series of question.
 
-![image](https://user-images.githubusercontent.com/101683611/178546599-02ee913e-6a0c-43ff-87a8-748a8feb0e1c.png)
+![image](https://user-images.githubusercontent.com/101683611/178546599-02ee913e-6a0c-43ff-87a8-748a8feb0e1c.png)</br>
 If an invalid input is detected, than the application will re-prompt the user for the correct input
