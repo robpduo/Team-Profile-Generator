@@ -1,19 +1,19 @@
 const renderManagerInfo = data => {
     return `<li class="list-item id">ID: ${data.id}</li>
-                                <li class="list-item email">Email: ${data.email}</li>
-                                <li class=list-item office-number">Office Number: ${data.officeNumber}</li>`
+                                <li class="list-item email">Email: <span><a href="mailto:${data.email}">${data.email}</a></span></li>
+                                <li class="list-item office-number">Office Number: ${data.officeNumber}</li>`
 }
 
 const renderInternInfo = data => {
     return `<li class="list-item id">ID: ${data.id}</li>
-                                <li class="list-item email">Email: ${data.email}</li>
-                                <li class=list-item school">School Name: ${data.school}</li>`
+                                <li class="list-item email">Email: <span><a href="mailto:${data.email}">${data.email}</a></span></li>
+                                <li class="list-item school">School Name: ${data.school}</li>`
 }
 
 const renderEngineerInfo = data => {
     return `<li class="list-item id">ID: ${data.id}</li>
-                                <li class="list-item email">Email: ${data.email}</li>
-                                <li class=list-item github">Github: <span><a href="https://www.github.com/${data.github}">${data.github}</a></span></li>`
+                                <li class="list-item email">Email: <span><a href="mailto:${data.email}">${data.email}</a></span></li>
+                                <li class="list-item github">Github: <span><a href="https://www.github.com/${data.github}">${data.github}</a></span></li>`
 }
 
 const generateCards = data => {
