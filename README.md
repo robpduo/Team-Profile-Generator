@@ -29,6 +29,15 @@ Input validation was implemented for the following prompts:
 Users may click on the email link on the team profile page to open their default mail app with the recipient field pre populated
 Users may click on the github repository link to be directed to the engineer's github repository page
 
+# Testing
+Unit tests were conducted for the following service layers: Intern.js, Employee.js, Engineer.js, and Manager.js
+Unit tests were done with Jest
+
+# To Run (from the root directory)
+Install dependencies: npm install
+Run tests: npm run test
+Run application: node index.js 
+
 ## Future Imporvements
 Validation check to determine if the randomly generated ID is unique
 
